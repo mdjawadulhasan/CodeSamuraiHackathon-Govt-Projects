@@ -86,7 +86,10 @@
 
 <header class="header">
   <a href="Home.php" class="logo"><i class="fas fa-laptop-medical"></i> Public Projects Information</a>
+  <nav class="navbar">
+    <a href="ViewProjects.php">View Projects</i></a>
 
+  </nav>
 </header>
 
 

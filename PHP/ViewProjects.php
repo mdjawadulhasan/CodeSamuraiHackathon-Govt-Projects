@@ -1,7 +1,7 @@
 <?php
 
 
-$title = 'Select Doctor';
+$title = 'View Projects';
 require_once './header.php';
 ?>
 
@@ -23,7 +23,7 @@ function ShowDocttor($sql)
         echo '<td><center>' . $r['project_start_time'] . '</center></td>';
         echo '<td><center>' . $r['project_completion_time'] . '</center></td>';
         echo '<td><center>' . $r['completion_percentage'] . '</center></td>';
-
+        echo "<td><a href=\"ReportProcess.php?Pid=$r[Pid]\"><input type='submit' value='' ><i class='fas fa-angle-double-right'></i></i></i></a></td>";
         echo '</tr><center>';
     }
 
@@ -82,6 +82,7 @@ function ShowDocttor($sql)
                 <th>Project Start Time</th>
                 <th>Project Completion Time</th>
                 <th>Project Completion Percentage</th>
+                <th>Submit Issues</th>
 
 
             </tr>
@@ -103,7 +104,7 @@ if (isset($_POST["submit"])) {
     } else if ($dept == null) {
         $time_input1 = strtotime($year1);
         $time_input2 = strtotime($year2);
-       
+
         // echo ($year1);
 
         //SELECT * FROM wp_osd_properties WHERE `listing_expiration` < '2020-08-05'

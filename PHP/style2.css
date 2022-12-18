@@ -529,11 +529,18 @@ nav i {
 }
 
 
+.infoinput2{
+    margin-top: 140px;
+    padding: 5rem 20%;
+    background-repeat: no-repeat;
+    background-size: 100%;  
+}
+
 /* 
 Vaccination History */
 
 .infoinput {
-    margin-top: -14px;
+    margin-top: -140px;
     padding: 5rem 20%;
     background-repeat: no-repeat;
     background-size: 100%;
