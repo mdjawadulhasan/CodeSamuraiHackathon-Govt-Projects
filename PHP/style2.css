@@ -265,6 +265,14 @@ nav i {
 
 /* here .srchdt and .dtsrcbtn is common for both book apt abd dbrlist */
 
+.yearin{
+   
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+    
+}
+
 .srchdt {
     display: flex;
     align-items: center;
