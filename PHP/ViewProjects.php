@@ -24,6 +24,7 @@ function ShowDocttor($sql)
         echo '<td><center>' . $r['project_completion_time'] . '</center></td>';
         echo '<td><center>' . $r['completion_percentage'] . '</center></td>';
         echo "<td><a href=\"ReportProcess.php?Pid=$r[Pid]\"><input type='submit' value='' ><i class='fas fa-angle-double-right'></i></i></i></a></td>";
+        echo "<td><a href=\"Chart.php?Pid=$r[Pid]\"><input type='submit' value='' ><i class='fas fa-angle-double-right'></i></i></i></a></td>";
         echo '</tr><center>';
     }
 
@@ -83,8 +84,7 @@ function ShowDocttor($sql)
                 <th>Project Completion Time</th>
                 <th>Project Completion Percentage</th>
                 <th>Submit Issues</th>
-
-
+                <th>View Statistics</th>
             </tr>
         </thead>
         <tbody>

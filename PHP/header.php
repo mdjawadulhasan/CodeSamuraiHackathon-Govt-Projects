@@ -37,7 +37,7 @@
   <script src="sweetalert2.min.js"></script>
   <link rel="stylesheet" href="sweetalert2.min.css">
 
-  <link rel="icon" href="../../Images/ticon.svg" type="image/icon type">
+  <link rel="icon" href="./ticon.png" type="image/icon type">
 
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
@@ -88,6 +88,7 @@
   <a href="Home.php" class="logo"><i class="fas fa-laptop-medical"></i> Public Projects Information</a>
   <nav class="navbar">
     <a href="ViewProjects.php">View Projects</i></a>
+
 
   </nav>
 </header>
