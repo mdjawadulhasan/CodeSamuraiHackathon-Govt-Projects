@@ -146,7 +146,7 @@ require_once './sidebar.php';
             container: 'map',
             style: 'mapbox://styles/mapbox/light-v11',
             center: [90.40874895549243, 23.729211164246585],
-            zoom: 18
+            zoom: 6
         });
 
         // add markers to map
