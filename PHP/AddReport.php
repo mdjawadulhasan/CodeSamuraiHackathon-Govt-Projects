@@ -9,6 +9,7 @@ if (isset($_POST["submit"])) {
         $conn = mysqli_connect('localhost', 'root', '', 'hackathon');
 
         $sql = "INSERT INTO reports(Id,PrID,Report) VALUES ('0','$id','$report')";
+
         if (mysqli_query($conn, $sql)) {
             header("location:ViewProjects.php");
             mysqli_close($conn);
