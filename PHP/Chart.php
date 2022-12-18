@@ -16,6 +16,7 @@ $result = mysqli_query($conn, $query);
 while ($row = mysqli_fetch_assoc($result)) {
 
   $completion_percentage = $row['completion_percentage'];
+  $project_name = $row['project_name'];
 
 }
 
@@ -49,8 +50,8 @@ $data1 = 100 - $data2;
     }
 
     .chart-wrapper {
-      width: 500px;
-      height: 500px;
+      width: 1000px;
+      height: 1000px;
       margin: 0 auto;
     }
   </style>
@@ -64,6 +65,9 @@ $data1 = 100 - $data2;
       </div>
       <div class="chart-wrapper">
         <canvas id="myChart"></canvas>
+        <br>
+        Project Name :
+        <?php echo $project_name; ?>
       </div>
     </div>
   </div>
@@ -107,7 +111,7 @@ $data1 = 100 - $data2;
             },
             font: {
               weight: "bold",
-              size: "30",
+              size: "60",
             },
             formatter: (value) => {
               return value + " %";
